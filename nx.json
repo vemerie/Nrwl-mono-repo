@@ -1,0 +1,48 @@
+{
+  "npmScope": "myorg",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": "*",
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "my-first-app-e2e": {
+      "tags": []
+    },
+    "my-first-app": {
+      "tags": []
+    },
+    "api": {
+      "tags": []
+    },
+    "api-interfaces": {
+      "tags": []
+    },
+    "tuskdesk-e2e": {
+      "tags": []
+    },
+    "tuskdesk": {
+      "tags": []
+    },
+    "tuskdesk-admin-e2e": {
+      "tags": []
+    },
+    "tuskdesk-admin": {
+      "tags": []
+    },
+    "ui-shell": {
+      "tags": []
+    },
+    "api-api": {
+      "tags": []
+    },
+    "node-app-api": {
+      "tags": []
+    },
+    "apps-api": {
+      "tags": []
+    }
+  }
+}

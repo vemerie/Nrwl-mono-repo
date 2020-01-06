@@ -1,9 +1,11 @@
 import { Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm'
 import { User } from './user.entity';
-import { Injectable } from '@nestjs/common';
+import { Injectable } from '@angular/core';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class UserService {
     constructor(
         @InjectRepository(User)

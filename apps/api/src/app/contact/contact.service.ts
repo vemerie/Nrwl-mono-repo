@@ -1,13 +1,11 @@
-import { Injectable } from '@angular/core';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Contact } from '../contacts/contact.entity';
 import { Repository } from 'typeorm';
 import { UpdateResult, DeleteResult } from  'typeorm';
+import { Injectable } from '@angular/core';
 
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class ContactService {
   constructor(
     @InjectRepository(Contact)

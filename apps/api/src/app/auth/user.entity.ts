@@ -6,19 +6,19 @@ export class User {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @Column()
+  @Column({ nullable: true})
   name: string;
 
   @Column({default: ''})
   avatar: string;
 
-  @Column()
+  @Column( { nullable: true})
   email: string;
 
   @BeforeInsert()
   hashPassword() {
     this.password = crypto.createHmac('sha256', this.password).digest('hex');
   }
-  @Column()
+  @Column({ nullable: true})
   password: string;
 }
